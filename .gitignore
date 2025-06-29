@@ -1,0 +1,6 @@
+codes.db
+prnt.sc_getter.code-workspace
+
+**/__pycache__/
+imgs/
+logs/
