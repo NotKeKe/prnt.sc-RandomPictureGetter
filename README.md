@@ -38,6 +38,9 @@ This project integrates [tesseract-ocr](https://github.com/tesseract-ocr/tessera
 ## ⚠️ Disclaimer
 This project is for **educational purposes only**. Users must assess the risks themselves and bear all consequences resulting from its use.
 
+## 📄 LICENSE
+- [LICENSE-MIT](LICENSE)
+
 ## 💬 Author's Note
 Honestly, I'm not sure why you'd need this<br>
 I don't even know why I made this<br>
