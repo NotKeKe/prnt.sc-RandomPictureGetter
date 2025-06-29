@@ -5,9 +5,12 @@ import string
 import aiofiles
 import asyncio
 from pathlib import Path
+import os
 
 from src.database import code_exists, save_code
 from src.logger import logger
+from src.OCR import check_img
+from config import Enable_OCR
 
 header = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
@@ -77,9 +80,15 @@ async def run():
                         if 'image' in response.headers.get('Content-Type', ''):
                             filename = f"{image_id}"
                             Path('imgs').mkdir(parents=True, exist_ok=True)
+
                             async with aiofiles.open(f'./imgs/{code}-{filename}', 'wb') as f:
                                 await f.write(await response.read())
-                            logger.info(f"圖片已成功下載：{code}-{filename} / 圖片連結: {direct_url}")
+
+                            if check_img(f'./imgs/{code}-{filename}') and Enable_OCR:
+                                os.remove(f'./imgs/{code}-{filename}')
+                                logger.debug('下載失敗：圖片不存在或已過期')
+                            else:
+                                logger.info(f"圖片已成功下載：{code}-{filename} / 圖片連結: {direct_url}")
                         else:
                             logger.debug("下載失敗：返回內容不是圖片")
             

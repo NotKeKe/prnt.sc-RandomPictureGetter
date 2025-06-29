@@ -19,7 +19,7 @@ def setup_logger(name='yin-xi', log_dir='logs'):
     handler.setFormatter(formatter)
 
     logger = logging.getLogger(name)
-    logger.setLevel(logging.DEBUG)
+    # logger.setLevel(logging.DEBUG) <- It changed to config.py
     logger.addHandler(handler)
     logger.addHandler(logging.StreamHandler())  # 同時印出到終端機
 

@@ -14,5 +14,5 @@ async def main():
     await asyncio.create_task(main_run())
 
 logger.info('prnt.sc getter 開始運行!')
-logger.info('儲存檔名格式為: {prnt.sc code} {imgur code}')
+logger.info('儲存檔名格式為: {prnt.sc code}-{imgur code}')
 asyncio.run(main())
