@@ -1,5 +1,5 @@
 Enable_OCR = True
-logging_level = 'INFO' # logging_level can be set to DEBUG, INFO, WARNING, ERROR or CRITICAL
+logging_level = 'DEBUG' # logging_level can be set to DEBUG, INFO, WARNING, ERROR or CRITICAL
 
 
 
