@@ -1,11 +1,14 @@
-# prnt.sc Random Image Downloader
-<p align="center">
-  <a href="https://github.com/NotKeKe/prnt.sc-RandomPictureGetter">
-    <img src="https://img.shields.io/github/stars/NotKeKe/prnt.sc-RandomPictureGetter?style=social" />
-  </a>
-</p>
+<div align="center">
 
-📖 [中文](./assests/README_zh_TW.md)
+# prnt.sc Random Image Downloader
+
+![Stars](https://img.shields.io/github/stars/NotKeKe/prnt.sc-RandomPictureGetter?style=social)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<br>
+[![Docs](https://img.shields.io/badge/Docs-繁體中文-blue.svg)](assests/README_zh_TW.md) 
+[![Docs](https://img.shields.io/badge/Docs-English-blue.svg)](README.md)
+
+</div>
 
 ## 📌 Introduction
 This project can randomly generate codes on prnt.sc and download the images.

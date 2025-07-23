@@ -1,4 +1,14 @@
-# prnt.sc 隨機圖片下載
+<div align="center">
+
+# prnt.sc Random Image Downloader
+
+![Stars](https://img.shields.io/github/stars/NotKeKe/prnt.sc-RandomPictureGetter?style=social)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<br>
+[![Docs](https://img.shields.io/badge/Docs-繁體中文-blue.svg)](README_zh_TW.md) 
+[![Docs](https://img.shields.io/badge/Docs-English-blue.svg)](../README.md)
+
+</div>
 
 ## 📌 簡介
 此專案可以從 prnt.sc 上隨機窮舉代碼，並將圖片下來
