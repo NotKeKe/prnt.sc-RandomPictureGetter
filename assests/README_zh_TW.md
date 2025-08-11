@@ -16,25 +16,40 @@
 ## 🚀 使用方式
 * 安裝 [python3](https://www.python.org/downloads/)
 ### 使用
-1. **windows**
-- 直接使用 `run.bat` 檔案，或者使用接下來的第二個方法。
-2. **使用 pm2**
-- 安裝 [node.js](https://nodejs.org/zh-tw/download)
-- 安裝 [pm2](https://pm2.keymetrics.io/)
-    - `npm install pm2 -g`
-- 進入當此專案所在的目錄
-- 在 powershell 或者你喜歡的終端中，運行 `run.sh` 檔案
+1. **Docker**
+    - 確認你的環境內有 Docker
+    - 運行以下命令:
+        ```bash
+        # clone 此專案
+        git clone https://github.com/NotKeKe/prnt.sc-RandomPictureGetter.git
+
+        # 進入專案目錄 
+        cd prnt.sc-RandomPictureGetter
+
+        # 運行 docker compose
+        docker compose up -d
+        ```
+2. **Windows**
+    - 直接使用 `run.bat` 檔案，或者使用接下來的第三個方法。
+3. **使用 pm2**
+    - 安裝 [node.js](https://nodejs.org/zh-tw/download)
+    - 安裝 [pm2](https://pm2.keymetrics.io/)
+        - `npm install pm2 -g`
+    - 進入當此專案所在的目錄
+    - 在 powershell 或者你喜歡的終端中，運行 `run.sh` 檔案
 
 ## 🖼️ 圖片位置
 下載下來的圖片，會在 `./imgs` 資料夾當中
 
 ## OCR 光學辨識
 此專案結合了 [tesseract-ocr](https://github.com/tesseract-ocr/tesseract)，可以在 `config.py` 中將他啟用/禁用
-### 安裝
-1. **windows**
-- 前往 [tesseract-ocr releases](https://github.com/tesseract-ocr/tesseract/releases)，找到有 `.exe` 的版本進行下載 (製作此專案時看到的[最新版本](https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe))
-2. **macOS / Linux**
-- 無需進行任何操作，我已經在 `run.sh` 當中加入了 tesseract 的安裝指令
+### `tesseract-ocr` 安裝
+1. **Docker**
+    - 該 Docker容器內建擁有 tesseract-ocr
+2. **Windows**
+    - 前往 [tesseract-ocr releases](https://github.com/tesseract-ocr/tesseract/releases)，找到有 `.exe` 的版本進行下載 (製作此專案時看到的[最新版本](https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe))
+3. **macOS / Linux**
+    - 無需進行任何操作，我已經在 `run.sh` 當中加入了 tesseract 的安裝指令
 
 ## ⚠️ 免責聲明
 本專案僅供**學習用途**，使用者需自行判斷風險並承擔使用所產生之一切後果。

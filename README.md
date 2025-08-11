@@ -17,9 +17,22 @@ This project can randomly generate codes on prnt.sc and download the images.
 * Install [Python3](https://www.python.org/downloads/)
 
 ### How to use
-1. **Windows**
+1. **Docker**
+    - Ensure Docker is installed in your environment.
+    - Run the following commands:
+        ```bash
+        # clone this project
+        git clone https://github.com/NotKeKe/prnt.sc-RandomPictureGetter.git
+
+        # enter the project directory 
+        cd prnt.sc-RandomPictureGetter
+
+        # run docker compose
+        docker compose up -d
+        ```
+2. **Windows**
    - Directly use the `run.bat` file, or use the second method below.
-2. **Using pm2**
+3. **Using pm2**
    - Install [Node.js](https://nodejs.org/en/download)
    - Install [pm2](https://pm2.keymetrics.io/)
      - `npm install pm2 -g`
@@ -32,10 +45,12 @@ Downloaded images will be in the `./imgs` folder
 ## OCR (Optical Character Recognition)
 This project integrates [tesseract-ocr](https://github.com/tesseract-ocr/tesseract), which can be enabled/disabled in `config.py`
 
-### Installation
-1. **Windows**
+### `tesseract-ocr` Installation
+1. **Docker**
+   - This Docker container has tesseract-ocr built-in
+2. **Windows**
    - Go to [tesseract-ocr releases](https://github.com/tesseract-ocr/tesseract/releases), find the version with `.exe` for download ([latest version](https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe) at the time of writing)
-2. **macOS/Linux**
+3. **macOS/Linux**
    - No action required, I've included tesseract installation commands in `run.sh`
 
 ## ⚠️ Disclaimer

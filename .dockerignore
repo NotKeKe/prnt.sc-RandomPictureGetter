@@ -1,0 +1,9 @@
+.git
+.gitignore
+run.bat
+run.sh
+
+*.md
+
+__pycache__/
+logs/

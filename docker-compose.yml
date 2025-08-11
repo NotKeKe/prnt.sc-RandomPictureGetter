@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  main:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: prnt.sc_getter
+    command: python main.py
+    volumes:
+      - ./imgs:/app/imgs
+      - ./logs:/app/logs
+      - ./config.py:/app/config.py
+    restart: unless-stopped
